@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{}{Rishabh Handa}{
+\href{mailto:rishabh.handa0512@gmail.com}{rishabh.handa0512@gmail.com} | +919696016668
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{JSS Academy of Technical Education, Noida}
+\descript{B.Tech (Electronics and Communication)}
+\location{2015-2019 | AKTU}
+Percentage : 69.27\% \\
+\sectionsep
+
+
+\subsection{DPVN, Kanpur}
+\descript{XII (Senior Secondary)}
+\location{2013-2014 | CBSE Board}
+Percentage : 92.60\% \\
+\sectionsep
+
+\subsection{DPVN, Kanpur}
+\descript{X (Secondary)}
+\location{2011-2012 | CBSE Board}
+CGPA : 9.2/10 \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/RHanda02}{\custombold{RHanda02}}\\
+LinkedIn://  \href{https://www.linkedin.com/in/rishabhhanda/}{\custombold{rishabhhanda}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+Digital Design using Verilog \\
+Control Systems \\
+Advanced Electronics System \\
+Data Structure \& Algorithms \\
+Microprocessor\\
+VLSI Design \\
+Digital Signal Processing \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+Python \textbullet{} C \textbullet{} Embedded C \textbullet{} Verilog
+VHDL \textbullet{} MATLAB \textbullet{} Assembly
+\sectionsep
+
+\subsection{Tools}
+ROS \textbullet{} Xilinx \textbullet{} MATLAB \textbullet{} Git \\
+fritzing \textbullet{} Cadence-OrCAD \\
+\sectionsep
+
+
+\subsection{Hardware}
+Arduino \textbullet{} Raspberry Pi \textbullet{} ESP 32 \\
+MSP430 \textbullet{} CC3200 \textbullet{} 8085 \textbullet{} 8051
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     OTHER DETAILS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Other Details}
+\subsection{Responsibilities}
+Member of Core Team Committee JSS\\
+Lab Coordinator, Embedded Systems \& Robotics Lab
+\sectionsep
+
+\subsection{Languages}
+English proficient \textbullet{} Hindi \textbullet{} Punjabi \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\href{http://bitbook.co.in/}{\runsubsection{Paragraph Technologies}
+\descript{| Embedded Intern}
+\location{July 2018 – Sept 2018 | Noida}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Programming on Arduino, ESP8266 and ESP32.
+\item Research to innovate a new and efficient method for digital writing.
+\item A low cost digital writing concept was developed and a patent application was filed for the same.
+\end{tightemize}
+\sectionsep}
+
+\href{http://shellios.com/}{\runsubsection{Shellios Technolabs}
+\descript{| Product Development Intern }
+\location{Feb 2018 – March 2018 | JSS Step, Noida}
+\begin{tightemize}
+\item Programming on ESP32 for the working of the Idea.
+\item Hardware testing and suggesting ways to improve it if the tests fail.
+\end{tightemize}
+\sectionsep}
+
+\runsubsection{MNNIT}
+\descript{| VLSI Design and Embedded Systems Trainee}
+\location{June 2017 – July 2017 | MNNIT, Allahabad}
+\begin{tightemize}
+\item Synthesis and simulation of circuit designs on Xilinx ISE using Verilog. Worked on Mentor Graphics to design the layout of IC and implementation on FPGA Kit.
+\item Learned the basic concepts of embedded systems and to program in assembly language on 8051 micro-controller and then using Embedded C programming.
+\item Beside the mini projects, the major projects were realization of Wallace Tree Multiplier and Light to frequency converter on trainer kit.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\href{https://github.com/sakshamkatiyar/chaser_drone}{\runsubsection{Drone Localization and Navigation}
+\descript{| ROS, Python}
+\location{October 2017 – March 2018 | e-Yantra IIT-B, Finalist}
+A drone based project that involves automatic stabilization and localization of a quadcopter. It was developed using Python and ROS. Gazebo simulator was used prior to implementation.
+\sectionsep}
+
+\runsubsection{Smart Home}
+\descript{| Arduino,ESP32}
+\location{SEPTEMBER 2017 - OCTOBER 2017 | Self practise}
+A Smart home project using different sensors like Temperature and Humidity sensor(for automatic appliances control), Rain sensor(for protecting clothes from rain), IR sensor, LDR(for automatic curtain control) etc.
+\sectionsep
+
+\runsubsection{Musical Note Identification and playing via robot}
+\descript{| Python, Audio Processing, Embedded C}
+\location{October 2016 – March 2017 | e-Yantra IIT-B, Semi-Finalist}
+A Python based program that can process the audio file and extract the Musical Notes from it. The task was to extract the notes and transfer it to the robots that can process it, play the same notes by striking pipes kept on the arena and display the same on its screen .
+\sectionsep
+
+\begin{tabular}{ll}
+    \textbullet{} Audio Recording & ESP Programming \\
+    \textbullet{} Hand Gesture controlled Bot & Arduino \\
+    \textbullet{} Maze Solving & Embedded C
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements} 
+\begin{tabular}{rrll}
+2018 & National & Finalist & Kronothon 2.0 \\
+2017 & National & 4\textsuperscript{th}/202  & E-Yantra, IIT-B under MHRD \\
+2017 & College & Hosted & Embedded Systems Workshop \\
+2016 & National & Semi-Finalist & E-Yantra, IIT-B under MHRD \\
+2016 & College & Hosted & Manual Robotics Workshop \\
+\end{tabular}
+\sectionsep
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
